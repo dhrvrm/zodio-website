@@ -1,0 +1,335 @@
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset End */
+
+/* Constants */
+:root {
+    --clr-primary: #E3C871;
+    --clr-secondary: #B3B3B3;
+    --gradient-primary: linear-gradient(90deg, rgba(233, 208, 118, 1) 0%, rgba(175, 134, 72, 1) 100%);
+}
+
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+
+/* Basic */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+    scroll-padding-top: 50px;
+    font-size: 10px;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+/* End Basic */
+
+/* Elements */
+
+body {
+    background-image: url(../media/zodio-sky.png);
+    background-repeat: no-repeat;
+    background-position: 90% 1%;
+    transition: background-position 20ms ease-in;
+    transition: background-size 20ms ease-in;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.header__logo {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.header__logo_img {
+    width: 4rem;
+}
+
+.header__logo_name {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+.hero {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+.hero__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.hero__logo_img {
+    width: 10rem;
+}
+
+.hero__logo_name {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.hero__tagline {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+}
+
+.cta__label {
+    opacity: 0.5;
+}
+
+.cta__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 2rem;
+}
+
+.cta__buttons_button {
+    height: 4rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.hero__figure_img {
+    max-width: 60rem;
+}
+
+/* Hero section end */
+
+/* Discover Section */
+
+#discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../media/zodio-app-discovery.png);
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+.discover__container {
+    padding: 4rem;
+    text-align: center;
+    max-width: 40rem;
+}
+
+.section_heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.section_text {
+    color: var(--clr-secondary);
+}
+
+#connect, #converse, #match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.connect__description {
+    max-width: 42rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.4rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer__logo_img {
+    width: 4rem;
+    aspect-ratio: 1;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* Element End */
+
+
+/* Scroll Snap */
+.scrollc {
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.scroll {
+    scroll-snap-align: start;
+}
+
+
+@media screen and (min-width:900px) {
+    .header nav {
+        padding: 4rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        gap: 2.4rem;
+        padding: 2rem 4rem;
+    }
+
+    #discover {
+        background-size: cover;
+    }
+
+    #connect, #converse, #match {
+        text-align: left;
+        flex-direction: row;
+    }
+
+    #match {
+        flex-direction: row-reverse;
+    }
+
+    .footer__logo {
+        flex-direction: row;
+    }
+
+    .footer__logo_img {
+        width: 2rem;
+    }
+
+    footer nav {
+        padding-inline: 4rem;
+        flex-direction: row;
+
+    }
+
+    .footer__links {
+        flex-direction: row;
+    }
+
+    .scrollc {
+        scroll-padding: 2rem;
+
+    }
+}

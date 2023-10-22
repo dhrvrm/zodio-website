@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.well-known/
+Disallow: /.cgi-bin/
+Disallow: /.htaccess
+Disallow: /.gitattributes
+Disallow: /.README.md
+
+Sitemap: https://zodio.app/sitemap.xml

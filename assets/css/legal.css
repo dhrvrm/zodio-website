@@ -1,0 +1,61 @@
+body {
+    padding: 2rem;
+}
+
+/* Styles for H1 tag */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+/* Styles for H2 tag */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+/* Styles for H3 tag */
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Styles for H4 tag */
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Styles for UL and LI tags */
+ul {
+    list-style: circle;
+    margin: 1rem 2.5rem;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Styles for A tag */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
